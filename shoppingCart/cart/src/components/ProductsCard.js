@@ -30,7 +30,7 @@ const ProductsCard = (props) => {
         <>
             <div className="product_card">
                 <figure>
-                    <img style={{height : "200px" , width : "200px"}} src={img} alt="item-img" />
+                    <img style={{height : "200px" , width : "200px" }} src={img} alt="item-img" />
                 </figure>
                 <strong className="rating">{rating}</strong>
                 <h4 className="title">{title}</h4>

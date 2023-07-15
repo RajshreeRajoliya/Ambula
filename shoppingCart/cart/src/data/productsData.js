@@ -62,6 +62,38 @@ const productsData = [
         title: "Rose Gold Plated Double Flared",
         price: 54500,
         quantity: 1,
+    },
+    {
+        id: 9,
+        img: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        rating: "★★★★",
+        title: "Rose Gold Plated Double Flared",
+        price: 54500,
+        quantity: 1,
+    },
+    {
+        id: 10,
+        img: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        rating: "★★★★",
+        title: "Rose Gold Plated Double Flared",
+        price: 54500,
+        quantity: 1,
+    },
+    {
+        id: 11,
+        img: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        rating: "★★★★",
+        title: "Rose Gold Plated Double Flared",
+        price: 54500,
+        quantity: 1,
+    },
+    {
+        id: 12,
+        img: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+        rating: "★★★★",
+        title: "Rose Gold Plated Double Flared",
+        price: 54500,
+        quantity: 1,
     }
 ];
 
