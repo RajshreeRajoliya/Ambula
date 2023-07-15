@@ -20,7 +20,7 @@ const Header = () => {
                                 className="cart_icon"
                                 onClick={() => toggleCart(true)}
                             >
-                                <img src="/images/bag-icon.svg" alt="bag-icon" />
+                                <img src="https://react-shopping-cart-project.netlify.app/images/bag-icon.svg" alt="bag-icon" />
                                 {
                                     cartQuantity >= 1 && (
                                         <span className="badge">{cartQuantity}</span>
