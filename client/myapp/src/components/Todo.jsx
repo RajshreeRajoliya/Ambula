@@ -19,7 +19,7 @@ function Todo() {
     completedTasks:
       JSON.parse(localStorage.getItem("todos"))?.completedTasks || [],
   });
-
+console.log(state)
   const [sortAZ, setSortAZ] = useState(false);
   const [sortPriority, setSortPriority] = useState(false);
 
@@ -62,12 +62,12 @@ function Todo() {
       <h1 className="todo__title"><img src={taskIcon} alt="task icon" className="todo__icon"/> React Todo App</h1>
       <AddTask dispatch={dispatch} darkMode={darkMode}/>
       <div className={darkMode ? "line darkmode" : 'line'}></div>
-      <h3 className="tasklist__title"><FontAwesomeIcon icon={faListCheck} /> List of your tasks:</h3>
+      <h3 className="tasklist__title"><FontAwesomeIcon icon={faListCheck} /> List of your tasks: {state.activeTasks.length}</h3> 
       <div className="tasklist__container">
         <TaskList todos={state.activeTasks} dispatch={dispatch} sortAZ={sortAZ} sortPriority={sortPriority} darkMode={darkMode}/>
       </div>
 
-      {state.completedTasks.length >= 1 ? <h3 className="completedtask__title"><FontAwesomeIcon icon={faCheckCircle} style={{color: 'green'}}/> Completed tasks:</h3> : null}
+      {state.completedTasks.length >= 1 ? <h3 className="completedtask__title"><FontAwesomeIcon icon={faCheckCircle} style={{color: 'green'}}/> Completed tasks: {state.completedTasks.length}</h3> :  null} 
       <div className="completedtask__container">
         <ol>
           <CompletedTasks todos={state.completedTasks}/>
@@ -76,7 +76,7 @@ function Todo() {
     </div>
    
     <SortingOptions sortingAZ={sortingAZ} sortingNewest={sortingNewest} sortingPriority={sortingPriority} state={state} dispatch={dispatch} changeMode={changeMode} darkMode={darkMode}/>
-    <footer>Created by <a href="https://github.com/Piotr-Kuras97">Piotr Kuraś</a></footer>
+    <footer>Created by <a href="https://github.com/RajshreeRajoliya/Ambula">Rajshree Rajoliya</a></footer>
     </>
   );
 };

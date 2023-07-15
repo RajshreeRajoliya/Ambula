@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import ImportTasks from "./ImportTasks";
+
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark , faArrowUpAZ, faCalendarDay, faStar} from "@fortawesome/free-solid-svg-icons"; 
@@ -31,7 +31,7 @@ function SortingOptions({sortingAZ, sortingNewest, sortingPriority, state, dispa
                 </div>
                 <hr />
                 
-                <ImportTasks state={state} dispatch={dispatch} darkMode={darkMode}/>
+               
 
                 <SwitchMode changeMode={changeMode} />
             </div>
